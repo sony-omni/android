@@ -345,7 +345,7 @@
   <project path="hardware/nvidia/audio" name="platform/hardware/nvidia/audio" groups="nvidia_audio" />
   <project path="hardware/nvidia/tegra124" name="platform/hardware/nvidia/tegra124" groups="tegra124" />
   <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" remote="omnirom" revision="android-5.0" />
-  <project path="hardware/qcom/audio-caf" name="android_hardware_qcom_audio-caf" remote="omnirom" revision="android-5.0" />
+  <project path="hardware/qcom/audio-caf" name="android_hardware_qcom_audio-caf" remote="android-legacy" revision="android-5.0" />
   <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" remote="omnirom" revision="android-5.0" />
   <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="omnirom" revision="android-5.0" />
   <project path="hardware/qcom/display-caf" name="android_hardware_qcom_display_caf" remote="android-legacy" revision="android-5.0" />
