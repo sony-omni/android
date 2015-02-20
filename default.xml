@@ -18,16 +18,16 @@
            sync-c="true"
            sync-j="4" />
 
-  <remote  name="android-legacy"
-           fetch="https://github.com/android-legacy"
+  <remote  name="sony-omni"
+           fetch="https://github.com/sony-omni"
            review="review.cas-online.nl" />
 
 
-  <project path="build" name="android_build" remote="android-legacy" revision="android-5.0" groups="pdk" >
+  <project path="build" name="android_build" remote="sony-omni" revision="android-5.0" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
-  <project path="android" name="omni-android" remote="android-legacy" revision="android-5.0" />
+  <project path="android" name="android" remote="sony-omni" revision="android-5.0" />
 
 
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
@@ -58,7 +58,7 @@
   <project path="device/generic/x86_64" name="device/generic/x86_64" groups="pdk" />
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
-  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="android-legacy" revision="android-5.0" groups="pdk" />
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="sony-omni" revision="android-5.0" groups="pdk" />
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
@@ -286,7 +286,7 @@
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs" />
-  <project path="frameworks/av" name="android_frameworks_av" remote="android-legacy" revision="android-caf-3.10" groups="pdk" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="sony-omni" revision="android-5.0" groups="pdk" />
   <project path="frameworks/base" name="android_frameworks_base" remote="omnirom" revision="android-5.0" groups="pdk-cw-fs" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
@@ -296,7 +296,7 @@
   <project path="frameworks/minikin" name="platform/frameworks/minikin" groups="pdk-cw-fs" />
   <project path="frameworks/ml" name="platform/frameworks/ml" groups="pdk-cw-fs" />
   <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs" />
-  <project path="frameworks/native" name="android_frameworks_native" remote="android-legacy" revision="android-caf-3.10" groups="pdk" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="sony-omni" revision="android-5.0" groups="pdk" />
   <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" />
   <project path="frameworks/opt/bluetooth" name="platform/frameworks/opt/bluetooth" groups="pdk-cw-fs" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" groups="pdk-cw-fs" />
@@ -346,13 +346,13 @@
   <project path="hardware/nvidia/audio" name="platform/hardware/nvidia/audio" groups="nvidia_audio" />
   <project path="hardware/nvidia/tegra124" name="platform/hardware/nvidia/tegra124" groups="tegra124" />
   <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" remote="omnirom" revision="android-5.0" />
-  <project path="hardware/qcom/audio-caf" name="android_hardware_qcom_audio-caf" remote="android-legacy" revision="android-5.0" />
+  <project path="hardware/qcom/audio-caf" name="android_hardware_qcom_audio-caf" remote="omnirom" revision="android-5.0" />
   <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" remote="omnirom" revision="android-5.0" />
   <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="omnirom" revision="android-5.0" />
-  <project path="hardware/qcom/display-caf" name="android_hardware_qcom_display-caf" remote="android-legacy" revision="android-5.0" />
+  <project path="hardware/qcom/display-caf" name="android_hardware_qcom_display-caf" remote="omnirom" revision="android-5.0" />
   <project path="hardware/qcom/keymaster" name="android_hardware_qcom_keymaster" remote="omnirom" revision="android-5.0" groups="qcom" />
   <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="omnirom" revision="android-5.0" />
-  <project path="hardware/qcom/media-caf" name="android_hardware_qcom_media-caf" remote="android-legacy" revision="android-5.0" />
+  <project path="hardware/qcom/media-caf" name="android_hardware_qcom_media-caf" remote="omnirom" revision="android-5.0" />
   <project path="hardware/qcom/msm8960" name="platform/hardware/qcom/msm8960" groups="qcom_msm8960" />
   <project path="hardware/qcom/msm8x26" name="platform/hardware/qcom/msm8x26" groups="qcom_msm8x26" />
   <project path="hardware/qcom/msm8x27" name="platform/hardware/qcom/msm8x27" groups="qcom_msm8x27" />
@@ -495,7 +495,7 @@
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk,tradefed" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs" />
-  <project path="system/core" name="android_system_core" remote="android-legacy" revision="android-5.0" groups="pdk" />
+  <project path="system/core" name="android_system_core" remote="omnirom" revision="android-5.0" groups="pdk" />
   <project path="system/extras" name="android_system_extras" remote="omnirom" revision="android-5.0" groups="pdk" />
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
   <project path="system/media" name="android_system_media" groups="pdk" remote="omnirom" revision="android-5.0" />
